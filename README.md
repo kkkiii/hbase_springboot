@@ -87,6 +87,8 @@ SHUTDOWN_MSG: Shutting down NameNode at FeanLau-Pro.local/10.188.215.153
 ************************************************************/
 ```
 
+创建文件成功，但是启动集群失败！！
+
 6. ~/hadoop-2.7.7/sbin
 
 启动集群
