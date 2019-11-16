@@ -46,3 +46,18 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 </configuration>
 
 ```
+
+3. core-site.xml
+
+```
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hadoop-master:9000/</value>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:/Users/liufan/hadoop_data/</value>
+    </property>
+</configuration>
+```
