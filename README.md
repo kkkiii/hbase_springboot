@@ -61,3 +61,10 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
     </property>
 </configuration>
 ```
+
+4. 更多配置，查询官方文档
+
+https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml
+
+https://hadoop.apache.org/docs/r2.8.0/hadoop-project-dist/hadoop-common/core-default.xml
+
