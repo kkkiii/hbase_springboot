@@ -68,3 +68,45 @@ https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/hdfs-defau
 
 https://hadoop.apache.org/docs/r2.8.0/hadoop-project-dist/hadoop-common/core-default.xml
 
+5. ~/hadoop-2.7.7/bin
+
+进入目录下，执行命令：
+
+```
+./hdfs namenode -format
+```
+
+最后几行日志是这个，说明文件生成成功：
+
+```
+19/11/16 11:13:55 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+19/11/16 11:13:55 INFO util.ExitUtil: Exiting with status 0
+19/11/16 11:13:55 INFO namenode.NameNode: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at FeanLau-Pro.local/10.188.215.153
+************************************************************/
+```
+
+6. ~/hadoop-2.7.7/sbin
+
+启动集群
+
+```
+./start-dfs.sh
+```
+
+出现了问题，解决mac下 ssh: connect to host localhost port 22: Connection refused
+
+```
+ssh localhost
+//ssh: connect to host localhost port 22: Connection refused
+sudo systemsetup -f -setremotelogin on
+
+ssh localhost 
+//ok
+```
+
+配置了之后，依然启动失败
+
+
+
