@@ -62,6 +62,12 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 </configuration>
 ```
 
+还要在```/etc/hosts/``` 中配置 hadoop-master 的地址的，否则会失败的
+
+```
+127.0.0.1 hadoop-master
+```
+
 4. 更多配置，查询官方文档
 
 https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml
