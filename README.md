@@ -7,10 +7,25 @@ Hos服务项目
 
 关键问题有 Hadoop与Spark的部署问题
 
-### Hadoop 部署
+### Hadoop伪分布式集群安装
 
+- ~/hadoop-2.7.7/sbin
 
-config / hdfs-site.xml
+该目录是终端脚本运行文件的
+
+- ~/hadoop-2.7.7/etc/hadoop
+
+该目录下进行各种配置
+
+1. 配置 hadoop-env.sh 文件
+
+配置 JAVA_HOME 变量
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
+
+2. hdfs-site.xml
+
+进入 config 目录下 ： 
 
 ```
 <?xml version="1.0"?>
