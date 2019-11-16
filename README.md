@@ -25,24 +25,23 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 
 2. hdfs-site.xml
 
-进入 config 目录下 ： 
+
 
 ```
-<?xml version="1.0"?>
 <configuration>
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///root/hdfs/namenode</value>
+        <value>file:/Users/liufan/hadoop_data/dfs/name</value>
         <description>NameNode directory for namespace and transaction logs storage.</description>
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///root/hdfs/datanode</value>
+        <value>file:/Users/liufan/hadoop_data/dfs/data</value>
         <description>DataNode directory</description>
     </property>
     <property>
         <name>dfs.replication</name>
-        <value>2</value>
+        <value>1</value>
     </property>
 </configuration>
 
